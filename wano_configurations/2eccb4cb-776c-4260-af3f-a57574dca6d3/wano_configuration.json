@@ -1,0 +1,16 @@
+{
+    "commands": {},
+    "values": {
+        "Molecules input": {
+            "Multiple molecules": true
+        },
+        "Calculation of spectra": {
+            "UV-Vis absorption": true,
+            "UV-Vis emission from Sn": true
+        }
+    },
+    "metadata": {
+        "name": "Settings",
+        "folder": "Prepare-Screening"
+    }
+}

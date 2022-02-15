@@ -1,0 +1,10 @@
+{
+    "commands": {},
+    "values": {
+        "Stop-msg": "Calculation of UV/Vis emission spectra not selected"
+    },
+    "metadata": {
+        "name": "Stop",
+        "folder": "Stop"
+    }
+}

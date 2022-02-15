@@ -1,0 +1,23 @@
+{
+    "commands": {},
+    "values": {
+        "Follow-up calculation": true,
+        "Results from old calculation": "global://ForEach/${calc_ITER}/DFT-Turbomole/outputs/results.tar.xz",
+        "Molecular structure": {
+            "Use old structure": true
+        },
+        "Basis set": {
+            "Basis set type": "def2-TZVP"
+        },
+        "Initial guess": {
+            "Use old orbitals": true
+        },
+        "Type of calculation": {
+            "Structure optimisation": true
+        }
+    },
+    "metadata": {
+        "name": "DFT Turbomole",
+        "folder": "DFT-Turbomole"
+    }
+}

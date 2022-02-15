@@ -1,0 +1,31 @@
+{
+    "commands": {},
+    "values": {
+        "Follow-up calculation": true,
+        "Results from old calculation": "global://ForEach/${calc_ITER}/Branch_1/True/DFT-Turbomole/outputs/results.tar.xz",
+        "Molecular structure": {
+            "Use old structure": true
+        },
+        "Basis set": {
+            "Use basis set from previous calculation": true
+        },
+        "Initial guess": {
+            "Use old orbitals": true
+        },
+        "DFT options": {
+            "Use parameters from previous calculation": true
+        },
+        "Type of calculation": {
+            "Structure optimisation": true,
+            "Excited state calculation": true,
+            "TDDFT options": {
+                "Number of excited states": 3,
+                "Optimised state": "import_from:Prepare-Screening.Calculation of spectra.State for emission spectrum"
+            }
+        }
+    },
+    "metadata": {
+        "name": "DFT Turbomole",
+        "folder": "DFT-Turbomole"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "commands": {},
+    "values": {
+        "Stop-msg": "Calculation of IR spectra not selected"
+    },
+    "metadata": {
+        "name": "Stop",
+        "folder": "Stop"
+    }
+}

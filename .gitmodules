@@ -1,0 +1,9 @@
+[submodule "wanos/Plot-Spectra"]
+	path = wanos/Plot-Spectra
+	url = https://github.com/KIT-Workflows/Plot-Spectra.git
+[submodule "wanos/Prepare-Screening"]
+	path = wanos/Prepare-Screening
+	url = https://github.com/KIT-Workflows/Prepare-Screening.git
+[submodule "wanos/DFT-Turbomole"]
+	path = wanos/DFT-Turbomole
+	url = https://github.com/KIT-Workflows/DFT-Turbomole.git

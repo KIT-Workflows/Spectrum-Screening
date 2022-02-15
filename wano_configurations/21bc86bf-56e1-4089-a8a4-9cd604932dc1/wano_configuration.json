@@ -1,0 +1,12 @@
+{
+    "commands": {},
+    "values": {
+        "IR yml files": "global://ForEach/*/Branch/True/DFT-Turbomole/outputs/turbomole_results.yml",
+        "Absorption yml files": "global://ForEach/*/Branch_1/True/DFT-Turbomole/outputs/turbomole_results.yml",
+        "Emsission yml files": "global://ForEach/*/Branch_1/True/Branch/True/DFT-Turbomole_1/outputs/turbomole_results.yml"
+    },
+    "metadata": {
+        "name": "Settings",
+        "folder": "Plot-Spectra"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "commands": {},
+    "values": {
+        "Molecular structure": {
+            "Structure file type": "Gaussian input",
+            "Structure file": "global://${calc}"
+        },
+        "Initial guess": {
+            "G1": {
+                "Use charge and multiplicity from input file": true
+            }
+        },
+        "DFT options": {
+            "G1": {
+                "Functional": "b-p"
+            }
+        },
+        "Type of calculation": {
+            "Structure optimisation": true
+        }
+    },
+    "metadata": {
+        "name": "DFT Turbomole",
+        "folder": "DFT-Turbomole"
+    }
+}
