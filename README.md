@@ -10,7 +10,7 @@ The code is based on python and the necessary virtual environment on the server 
 
 ## Required input
 
-The required input consists of one or several molecules which can be provided in different formats
+The required input consists of one or several molecules which can be provided in different formats. In addition, the resource requests need to be adjusted to your HPC cluster.
 
 ## Settings
 
