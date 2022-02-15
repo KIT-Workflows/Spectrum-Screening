@@ -1,0 +1,39 @@
+<root wfxml_version="2.0">
+  <WaNo type="Prepare-Screening" uuid="2eccb4cb-776c-4260-af3f-a57574dca6d3" id="0" name="Prepare-Screening"/>
+  <WFControl name="ForEach" type="ForEach" is_file_iterator="True">
+    <WFControl name="SubWF" type="SubWorkflow">
+      <WaNo type="DFT-Turbomole" uuid="cc652691-4967-49cf-8ddc-18697c7bb2e8" id="0" name="DFT-Turbomole"/>
+      <WaNo type="DFT-Turbomole" uuid="040934aa-9134-48b7-97bd-caa406163c1c" id="1" name="DFT-Turbomole_1"/>
+      <WFControl name="Branch" type="If" condition="Prepare-Screening.Calculation of spectra.IR">
+        <WFControl name="SubWF" type="SubWorkflow" branch="true">
+          <WaNo type="DFT-Turbomole" uuid="7bec413c-3259-4311-a9cf-2b2becf19f00" id="0" name="DFT-Turbomole"/>
+        </WFControl>
+        <WFControl name="SubWF" type="SubWorkflow" branch="false">
+          <WaNo type="Stop" uuid="3fff6d94-8e8b-48f3-96e1-f6b89a1587d8" id="0" name="Stop"/>
+        </WFControl>
+      </WFControl>
+      <WFControl name="Branch_1" type="If" condition="Prepare-Screening.Calculation of spectra.UV-Vis absorption">
+        <WFControl name="SubWF" type="SubWorkflow" branch="true">
+          <WaNo type="DFT-Turbomole" uuid="175a80f2-2fac-4991-af04-3be87777b7c0" id="0" name="DFT-Turbomole"/>
+          <WFControl name="Branch" type="If" condition="Prepare-Screening.Calculation of spectra.UV-Vis emission from Sn">
+            <WFControl name="SubWF" type="SubWorkflow" branch="true">
+              <WaNo type="DFT-Turbomole" uuid="8b59cacc-3fcf-44e1-ba81-5e58118b20dc" id="0" name="DFT-Turbomole"/>
+              <WaNo type="DFT-Turbomole" uuid="a29731d8-e54b-4c21-b72e-e8ae8a13c4dc" id="1" name="DFT-Turbomole_1"/>
+            </WFControl>
+            <WFControl name="SubWF" type="SubWorkflow" branch="false">
+              <WaNo type="Stop" uuid="e44eebe0-ffa8-413f-8b48-6afe8a0d19a2" id="0" name="Stop"/>
+            </WFControl>
+          </WFControl>
+        </WFControl>
+        <WFControl name="SubWF" type="SubWorkflow" branch="false">
+          <WaNo type="Stop" uuid="2d3c312d-aea8-41b1-a57e-7d04e299f989" id="0" name="Stop"/>
+        </WFControl>
+      </WFControl>
+    </WFControl>
+    <FileList>
+      <File>Prepare-Screening/outputs/*.inp</File>
+    </FileList>
+    <IterName>calc</IterName>
+  </WFControl>
+  <WaNo type="Plot-Spectra" uuid="21bc86bf-56e1-4089-a8a4-9cd604932dc1" id="2" name="Plot-Spectra"/>
+</root>
