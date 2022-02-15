@@ -18,7 +18,7 @@ The required input consists of one or several molecules which can be provided in
 Chose your molecule(s) and the type of desired spectra.
 
 - **DFT-Turbomole**  
-Choose you DFT method (functional, basis set, dispersion correction, ...) in the second DFT-Turbomole WaNo ('DFT-Turbomole_1'). Note that UV/Vis emission spectra cannot be calculated when a COSMO model
+Choose your DFT method (functional, basis set, dispersion correction, ...) in the second DFT-Turbomole WaNo ('DFT-Turbomole_1'). Note that UV/Vis emission spectra cannot be calculated when a COSMO model
 is selected.
 
 ## Output
