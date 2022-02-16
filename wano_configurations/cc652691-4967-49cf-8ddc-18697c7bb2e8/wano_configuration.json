@@ -5,6 +5,9 @@
             "Structure file type": "Gaussian input",
             "Structure file": "global://${calc}"
         },
+        "Basis set": {
+            "Basis set type": "def-SV(P)"
+        },
         "Initial guess": {
             "G1": {
                 "Use charge and multiplicity from input file": true
